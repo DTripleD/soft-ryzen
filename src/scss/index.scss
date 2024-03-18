@@ -1,0 +1,111 @@
+@import "./base/base";
+@import "./base/reset";
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid red;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    padding-left: 96px;
+    padding-right: 96px;
+    width: 1200px;
+  }
+}
+
+.hero__section {
+  background-color: #dc3b5a;
+  border-radius: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid red;
+
+  position: fixed;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    padding-left: 96px;
+    padding-right: 96px;
+    width: 1200px;
+  }
+}
+
+.logo__icon {
+  width: 48px;
+  height: 32px;
+
+  fill: #1e1e1e;
+
+  @media screen and (min-width: 1440px) {
+    width: 72px;
+    height: 50px;
+  }
+}
+
+.menu__icon {
+  width: 24px;
+  height: 24px;
+  fill: #1e1e1e;
+
+  transition: fill ease-in-out 350ms;
+}
+
+.social__network_button:hover .menu__icon {
+  fill: #f0f0f0;
+}
+
+.social__network_button {
+  //  ??? Нужно оно тут или нет? Высота меняеться
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  // ??? Или через падинг?
+  // padding: 12px;
+
+  border: none;
+  background-color: #1e1e1e1a;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.social__network_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero__button {
+  background-color: #1e1e1e1a;
+  border: none;
+  color: #1e1e1e;
+  border-radius: 12px;
+
+  // ??? падинг или высоту?
+}
