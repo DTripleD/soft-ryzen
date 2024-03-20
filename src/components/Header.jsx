@@ -26,13 +26,6 @@ const Header = () => {
 
   return (
     <header ref={headerRef}>
-      {/* <button>About</button>
-        <button>M-map</button>
-        <button>Faq</button>
-        <button>Arts</button>
-        <button>Mint</button>
-        <button>Close</button> */}
-
       <div>
         <svg className={`logo__icon ${scrolled ? "scrolled" : ""}`}>
           <use href={icons + "#logo"}></use>
