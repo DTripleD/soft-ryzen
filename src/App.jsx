@@ -1,10 +1,15 @@
 import "./App.scss";
-import Arts from "./components/Arts";
-import ContactUs from "./components/ContactUs";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import MindMap from "./components/MindMap";
+import About from "./components/About/About";
+import Arts from "./components/Arts/Arts";
+import ContactUs from "./components/ContactUs/ContactUs";
+
+import Faq from "./components/Faq/Faq";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+
+import Hero from "./components/Hero/Hero";
+
+import MindMap from "./components/MindMap/MindMap";
 
 function App() {
   return (
@@ -13,21 +18,8 @@ function App() {
 
       {/* ??? Нужен мейн? */}
       <main>
-        <section className="hero__section">
-          <div className="container">
-            <div>
-              <p>diD yOu seE iT ?</p>
-              <h1>YACHT APES</h1>
-              <p>Apes aRe eveRywhere</p>
-              <p>
-                Yacht Ape is a collection of unique digital apes that you can
-                own in NFT format
-              </p>
-            </div>
-            <button className="hero__button">MEET APES</button>
-            <img src="../src/images/hero-img.png" alt="Hero image" />
-          </div>
-        </section>
+        <Hero />
+        <About />
         <MindMap />
         <Faq />
         <Arts />

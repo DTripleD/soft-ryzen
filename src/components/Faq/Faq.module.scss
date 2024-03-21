@@ -1,0 +1,95 @@
+@import "../../index.scss";
+
+.faq__item {
+  display: flex;
+
+  position: relative;
+
+  // ???  Так?
+  justify-content: flex-end;
+
+  border-radius: 24px;
+  padding: 24px;
+
+  &:hover .faq__text {
+    display: block;
+  }
+
+  &:hover .faq__count {
+    color: #ffffff;
+  }
+
+  &:hover .faq__title {
+    color: #dc3b5a;
+  }
+
+  &:hover {
+    background-color: #1e1e1e;
+  }
+
+  &:hover .faq__image {
+    display: block;
+  }
+}
+
+.faq__image {
+  transform: rotate(-8deg);
+  transform-origin: top left;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 248px;
+  height: 282px;
+  border-radius: 24px;
+}
+
+.faq__count {
+  color: #dc3b5a;
+
+  margin-top: 12px;
+
+  font-family: "Biro Script Plus Bold US";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+}
+
+.faq__info__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 635px;
+
+  // ??? Какой тут маржин?
+  margin-left: 25px;
+}
+
+.faq__title {
+  color: #ffffff;
+  text-transform: uppercase;
+
+  font-family: "Right Grotesk Compact Black";
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 64px;
+}
+
+.faq__text {
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  font-family: "Messina Sans Mono Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+  display: none;
+
+  margin-top: 36px;
+}

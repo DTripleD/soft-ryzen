@@ -1,0 +1,43 @@
+@import "../../index.scss";
+
+.about__title {
+  text-transform: uppercase;
+  font-family: "Right Grotesk Compact Black";
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 120px;
+
+  color: #ffffff;
+}
+
+.about__title__span {
+  color: #dc3b5a;
+}
+
+.about__text {
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  font-family: "Messina Sans Mono Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+
+.animated__text {
+  font-family: "Right Grotesk Compact Black";
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 64px;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.animated__slider {
+  background-color: #dc3b5a;
+
+  display: flex;
+}

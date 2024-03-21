@@ -1,0 +1,80 @@
+@import "../../index.scss";
+
+.scrolled {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.social__network_list {
+  display: flex;
+
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social__network_item {
+  background-color: #1e1e1e1a;
+  border-radius: 12px;
+}
+
+.opened__list {
+  display: flex;
+  width: auto;
+  transition: all ease-in-out 500ms;
+}
+
+.social__network_button:hover .menu__icon {
+  fill: #f0f0f0;
+}
+
+.social__network_button {
+  transition: color ease-in-out 350ms;
+  //  ??? Нужно оно тут или нет? Высота меняеться
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 80px;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  // ??? Или через падинг?
+  // padding: 12px;
+
+  border: none;
+  cursor: pointer;
+
+  background-color: transparent;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  font-family: "Messina Sans Mono SemiBold";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid red;
+
+  // position: fixed;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    padding-left: 96px;
+    padding-right: 96px;
+    width: 1200px;
+  }
+}

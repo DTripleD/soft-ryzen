@@ -1,0 +1,67 @@
+@import "../../index.scss";
+
+.hero__section {
+  background-color: #dc3b5a;
+  border-radius: 24px;
+}
+
+.question__text {
+  font-family: "Biro Script Plus Bold";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+
+  color: #1e1e1e;
+}
+
+.hero__title {
+  font-family: "Right Grotesk Compact Black";
+  font-size: 164px;
+  font-weight: 900;
+  line-height: 164px;
+  text-align: center;
+  color: #1e1e1e;
+  text-align-last: justify;
+
+  color: #1e1e1e;
+}
+
+.button__wrapper {
+  width: 337px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hero__text {
+  font-family: "Messina Sans Mono Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+  text-transform: uppercase;
+
+  color: #1e1e1e;
+}
+
+.hero__button {
+  background-color: #1e1e1e1a;
+  border: none;
+  color: #1e1e1e;
+  border-radius: 12px;
+
+  padding-top: 16px;
+  padding-bottom: 20px;
+  // ??? Почему разные падинги?
+
+  font-family: "Right Grotesk Compact Black";
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 34px;
+  text-align: left;
+
+  color: #1e1e1e;
+
+  text-align: center;
+}

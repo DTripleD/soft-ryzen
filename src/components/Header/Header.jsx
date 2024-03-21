@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
-import icons from "../images/icons.svg";
+import icons from "/src/images/icons.svg";
+
+import css from "./Header.module.scss";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,8 +10,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const headerRef = useRef(null);
-
-  console.log(scrolled);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,22 +25,22 @@ const Header = () => {
   }, []);
 
   return (
-    <header ref={headerRef}>
+    <header ref={headerRef} className={css.header}>
       <div>
-        <svg className={`logo__icon ${scrolled ? "scrolled" : ""}`}>
+        <svg className={`${css.logo__icon} ${scrolled ? css.scrolled : ""}`}>
           <use href={icons + "#logo"}></use>
         </svg>
       </div>
-      <ul className="social__network_list">
-        <li className="social__network_item">
+      <ul className={css.social__network_list}>
+        <li className={css.social__network_item}>
           {/* ??? Можно ли сюда ul? */}
-          <ul className="opened__list">
+          <ul className={css.opened__list}>
             {isOpen && (
               <>
                 <li>
                   <button
-                    className={`social__network_button ${
-                      scrolled ? "scrolled" : ""
+                    className={`${css.social__network_button} ${
+                      scrolled ? css.scrolled : ""
                     }`}
                   >
                     About
@@ -48,8 +48,8 @@ const Header = () => {
                 </li>
                 <li>
                   <button
-                    className={`social__network_button ${
-                      scrolled ? "scrolled" : ""
+                    className={`${css.social__network_button} ${
+                      scrolled ? css.scrolled : ""
                     }`}
                   >
                     M-map
@@ -57,8 +57,8 @@ const Header = () => {
                 </li>
                 <li>
                   <button
-                    className={`social__network_button ${
-                      scrolled ? "scrolled" : ""
+                    className={`${css.social__network_button} ${
+                      scrolled ? css.scrolled : ""
                     }`}
                   >
                     Faq
@@ -66,8 +66,8 @@ const Header = () => {
                 </li>
                 <li>
                   <button
-                    className={`social__network_button ${
-                      scrolled ? "scrolled" : ""
+                    className={`${css.social__network_button} ${
+                      scrolled ? css.scrolled : ""
                     }`}
                   >
                     Arts
@@ -75,8 +75,8 @@ const Header = () => {
                 </li>
                 <li>
                   <button
-                    className={`social__network_button ${
-                      scrolled ? "scrolled" : ""
+                    className={`${css.social__network_button} ${
+                      scrolled ? css.scrolled : ""
                     }`}
                   >
                     Mint
@@ -87,8 +87,8 @@ const Header = () => {
             <li>
               <button
                 onClick={() => setIsOpen((prev) => !prev)}
-                className={`social__network_button ${
-                  scrolled ? "scrolled" : ""
+                className={`${css.social__network_button} ${
+                  scrolled ? css.scrolled : ""
                 }`}
               >
                 {isOpen ? "Close" : "Menu"}
@@ -96,24 +96,30 @@ const Header = () => {
             </li>
           </ul>
         </li>
-        <li className="social__network_item">
-          <button className="social__network_button">
-            <svg className={`menu__icon ${scrolled ? "scrolled" : ""}`}>
+        <li className={css.social__network_item}>
+          <button className={css.social__network_button}>
+            <svg
+              className={`${css.menu__icon} ${scrolled ? css.scrolled : ""}`}
+            >
               <use href={icons + "#discord"}></use>
             </svg>
           </button>
         </li>
 
-        <li className="social__network_item">
-          <button className="social__network_button">
-            <svg className={`menu__icon ${scrolled ? "scrolled" : ""}`}>
+        <li className={css.social__network_item}>
+          <button className={css.social__network_button}>
+            <svg
+              className={`${css.menu__icon} ${scrolled ? css.scrolled : ""}`}
+            >
               <use href={icons + "#boat"}></use>
             </svg>
           </button>
         </li>
-        <li className="social__network_item">
-          <button className="social__network_button">
-            <svg className={`menu__icon ${scrolled ? "scrolled" : ""}`}>
+        <li className={css.social__network_item}>
+          <button className={css.social__network_button}>
+            <svg
+              className={`${css.menu__icon} ${scrolled ? css.scrolled : ""}`}
+            >
               <use href={icons + "#twitter"}></use>
             </svg>
           </button>

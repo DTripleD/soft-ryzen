@@ -1,0 +1,104 @@
+@import "../../index.scss";
+
+.form__wrapper {
+  width: 581px;
+
+  // ??? Или в общий контейнер?
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_text {
+  font-family: "Messina Sans Mono Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 92px;
+  margin-right: 92px;
+}
+
+.label__wrapper {
+  display: flex;
+}
+
+.form__icon_wrapper {
+  background-color: #1e1e1e;
+
+  display: flex;
+
+  padding: 20px;
+
+  border-radius: 12px 0 0 12px;
+}
+
+.label {
+  border: 1px solid #1e1e1e;
+  border-radius: 0 12px 12px 0;
+}
+
+.input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+
+  padding: 22px 24px 22px 24px;
+
+  color: #ffffff3d;
+  font-family: "Messina Sans Mono Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.input::placeholder {
+  color: #ffffff3d;
+
+  // ??? Какой тут шрифт?
+  font-family: "Messina Sans Mono Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+  text-transform: uppercase;
+}
+
+.mint_button {
+  background-color: #dc3b5a;
+
+  padding-top: 16px;
+
+  padding-bottom: 20px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  font-family: "Right Grotesk Compact Black";
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border: none;
+}

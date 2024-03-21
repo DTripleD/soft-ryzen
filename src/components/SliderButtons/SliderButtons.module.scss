@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.slider__buttons_wrapper {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.slider__button {
+  // ???? Почему оьычный шрифт не отображаеться?
+  font-family: "Biro Script Plus Bold";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+
+  background-color: transparent;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 0;
+}

@@ -1,0 +1,41 @@
+.logo__icon {
+  width: 48px;
+  height: 32px;
+
+  fill: #1e1e1e;
+
+  transition: fill ease-in-out 350ms;
+
+  @media screen and (min-width: 1440px) {
+    width: 72px;
+    height: 50px;
+  }
+}
+
+.menu__icon {
+  width: 24px;
+  height: 24px;
+  fill: #1e1e1e;
+
+  transition: fill ease-in-out 350ms;
+}
+
+.up_left_arrow_icon {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  fill: #fff;
+}
+
+.sharp__icon {
+  width: 36px;
+  height: 36px;
+
+  fill: #fff;
+}
+
+.form__icon {
+  // ??? Почему не все 24 пикселя?
+  width: 24px;
+  height: 24px;
+}
