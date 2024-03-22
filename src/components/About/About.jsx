@@ -1,6 +1,7 @@
 import icons from "/src/images/icons.svg";
 
 import css from "./About.module.scss";
+import TextSlider from "../TextSlider/TextSlider";
 
 const About = () => {
   return (
@@ -48,28 +49,8 @@ const About = () => {
           />
         </div>
       </div>
-      <div className={css.animated__slider}>
-        <ul className={css.ticker}>
-          <li className={css.ticker__item}>
-            <p className={css.animated__text}>Destroy stereotypes</p>
-            <svg className={css.sharp__icon}>
-              <use href={icons + "#sharp"}></use>
-            </svg>
-          </li>
-          <li className={css.ticker__item}>
-            <p className={css.animated__text}>Have no limits</p>
-            <svg className={css.sharp__icon}>
-              <use href={icons + "#sharp"}></use>
-            </svg>
-          </li>
-          <li className={css.ticker__item}>
-            <p className={css.animated__text}>Break rules</p>
-            <svg className={css.sharp__icon}>
-              <use href={icons + "#sharp"}></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
+
+      <TextSlider />
     </section>
   );
 };

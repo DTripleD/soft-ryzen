@@ -17,7 +17,6 @@ const ContactUs = () => {
           </p>
 
           <form className={css.form}>
-            {/* ??? Окей добавлять див ради флекса? */}
             <div className={css.label__wrapper}>
               <div className={css.form__icon_wrapper}>
                 <svg className={css.form__icon}>
