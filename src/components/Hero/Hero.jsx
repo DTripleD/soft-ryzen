@@ -22,10 +22,29 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           src="/src/images/hero-img.png"
           alt="Hero image"
           className={css.hero__image}
+        /> */}
+
+        <img
+          srcSet="
+          /src/images/hero/hero-img_s@1x.png 216w, 
+          /src/images/hero/hero-img_s@2x.png 432w, 
+          /src/images/hero/hero-img_m@1x.png 283w, 
+          /src/images/hero/hero-img_m@2x.png 566w, 
+          /src/images/hero/hero-img_l@1x.png 463w, 
+          /src/images/hero/hero-img_l@2x.png 926w"
+          sizes="
+                      (min-width: 1440px) 463px, 
+                      (min-width: 768px) 283px, 
+                      (min-width: 360px) 216px, 
+                      100vw
+                    "
+          src="/src/images/hero/hero-img_s@1x.png"
+          alt="Hero image"
+          loading="lazy"
         />
       </div>
     </section>

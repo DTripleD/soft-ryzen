@@ -40,6 +40,13 @@
   fill: #fff;
 }
 
+.sharp__icon__small {
+  @media screen and (max-width: 1399px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .form__icon {
   // ??? Почему не все 24 пикселя?
   width: 24px;

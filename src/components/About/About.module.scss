@@ -3,15 +3,27 @@
 .about__title {
   text-transform: uppercase;
   font-family: "Right Grotesk Compact Black";
-  font-size: 120px;
+  font-size: 40px;
   font-weight: 900;
-  line-height: 120px;
+  line-height: 40px;
 
   color: #ffffff;
 
-  width: 538px;
+  margin-bottom: 16px;
 
-  margin-bottom: 56px;
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 269px;
+    margin-bottom: 68px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 120px;
+    line-height: 120px;
+    width: 538px;
+    margin-bottom: 56px;
+  }
 }
 
 .about__title__span {
@@ -24,17 +36,37 @@
   text-transform: uppercase;
 
   font-family: "Messina Sans Mono Book";
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 29px;
-  text-align: center;
+  line-height: 19px;
+  text-align: right;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &.second {
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
 }
 
 .animated__text {
   font-family: "Right Grotesk Compact Black";
-  font-size: 64px;
+  font-size: 36px;
   font-weight: 900;
-  line-height: 64px;
+  line-height: 36px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+
+    line-height: 64px;
+  }
+
   color: #ffffff;
 
   text-transform: uppercase;
@@ -43,31 +75,77 @@
 .animated__slider {
   background-color: #dc3b5a;
 
-  display: flex;
+  padding-top: 6px;
+  padding-bottom: 9px;
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 16px;
+  }
 }
 
-.about__upper_text {
-  width: 409px;
-  text-align: end;
-}
+// .about__upper_text {
+//   width: 409px;
+//   text-align: end;
+// }
 
 .about__lower_text {
-  width: 417px;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+
   align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+    width: 269px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 36px;
+    width: 417px;
+  }
 }
 
 .about__wrapper {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+
+  // flex-direction: column;
 }
 
-.about__right_side {
+.ticker {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 24px;
 
-  padding-top: 24px;
+  @media screen and (min-width: 1440px) {
+    gap: 36px;
+  }
+
+  width: 100vw;
+
+  white-space: nowrap;
+
+  animation: ticker 15s linear infinite;
+
+  // ???
+
+  // animation-delay: -15s;
+}
+
+.ticker__item {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  @media screen and (min-width: 1440px) {
+    gap: 36px;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
