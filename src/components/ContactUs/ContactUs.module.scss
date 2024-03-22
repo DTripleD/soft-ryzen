@@ -1,37 +1,66 @@
 @import "../../index.scss";
 
 .form__wrapper {
-  width: 581px;
-
   // ??? Или в общий контейнер?
   display: flex;
   flex-direction: column;
-  gap: 40px;
+
   align-items: center;
 
   margin-left: auto;
   margin-right: auto;
+
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 397px;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 581px;
+    gap: 40px;
+  }
 }
 
 .contact_text {
   font-family: "Messina Sans Mono Book";
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0em;
+  line-height: 19px;
+
   text-align: center;
 
   color: #ffffff;
 
   text-transform: uppercase;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-left: 92px;
-  margin-right: 92px;
+
+  gap: 16px;
+
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 248px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 24px;
+
+    width: 397px;
+  }
 }
 
 .label__wrapper {
@@ -43,14 +72,36 @@
 
   display: flex;
 
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
 
-  border-radius: 12px 0 0 12px;
+  width: 48px;
+
+  border-radius: 8px 0 0 8px;
+
+  @media screen and (min-width: 1440px) {
+    border-radius: 12px 0 0 12px;
+    width: 64px;
+  }
+
+  // padding: 20px;
 }
 
 .label {
   border: 1px solid #1e1e1e;
-  border-radius: 0 12px 12px 0;
+
+  display: flex;
+
+  width: 100%;
+
+  border-radius: 0 8px 8px 0;
+
+  padding: 17px 24px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 22px 24px;
+    border-radius: 0 12px 12px 0;
+  }
 }
 
 .input {
@@ -58,47 +109,69 @@
   border: none;
   outline: none;
 
-  padding: 22px 24px 22px 24px;
-
-  color: #ffffff3d;
-  font-family: "Messina Sans Mono Book";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-}
-
-.input::placeholder {
   color: #ffffff3d;
 
-  // ??? Какой тут шрифт?
-  font-family: "Messina Sans Mono Book";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
+  padding: 0;
 
-  text-transform: uppercase;
+  font-family: "Messina Sans Mono Book";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &::placeholder {
+    color: #ffffff3d;
+
+    // ??? Какой тут шрифт?
+    font-family: "Messina Sans Mono Book";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+    }
+
+    text-transform: uppercase;
+  }
 }
 
 .mint_button {
   background-color: #dc3b5a;
-
-  padding-top: 16px;
-
-  padding-bottom: 20px;
-
   text-align: center;
 
-  border-radius: 12px;
+  padding-top: 10px;
 
-  font-family: "Right Grotesk Compact Black";
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: left;
+  padding-bottom: 12px;
 
   color: #ffffff;
   text-transform: uppercase;
 
+  border-radius: 8px;
+
   border: none;
+
+  font-family: "Right Grotesk Compact Black";
+
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+
+  @media screen and (min-width: 1440px) {
+    border-radius: 12px;
+
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 34px;
+  }
 }

@@ -1,0 +1,68 @@
+@import "../../index.scss";
+
+.mind_map_item {
+  background-color: #1e1e1e;
+  color: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 24px 12px;
+
+  // ??? Правильно ли использовать тут flex?
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    width: 216px;
+    height: 216px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 24px;
+  }
+}
+
+.mind_map_item.last {
+  background-color: #dc3b5a;
+}
+
+.card_text {
+  font-family: "Messina Sans Mono Book";
+
+  text-transform: uppercase;
+
+  margin-left: auto;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 128px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 29px;
+
+    width: 228px;
+  }
+}
+
+.card_title {
+  font-family: "Right Grotesk Compact Black";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 32px;
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}

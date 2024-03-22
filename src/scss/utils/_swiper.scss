@@ -1,7 +1,16 @@
 .swiper-slide {
   width: auto;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .swiper {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 48px;
+  }
 }

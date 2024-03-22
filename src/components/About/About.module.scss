@@ -8,6 +8,10 @@
   line-height: 120px;
 
   color: #ffffff;
+
+  width: 538px;
+
+  margin-bottom: 56px;
 }
 
 .about__title__span {
@@ -40,4 +44,30 @@
   background-color: #dc3b5a;
 
   display: flex;
+}
+
+.about__upper_text {
+  width: 409px;
+  text-align: end;
+}
+
+.about__lower_text {
+  width: 417px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__right_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-top: 24px;
 }

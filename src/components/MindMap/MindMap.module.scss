@@ -1,51 +1,14 @@
 @import "../../index.scss";
 
 .mind_map_list {
+  // ??????????
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 480px 480px;
-
   gap: 24px;
-}
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 242px 242px;
 
-.mind_map_item {
-  background-color: #1e1e1e;
-  color: #ffffff;
-
-  border-radius: 24px;
-  padding: 24px;
-
-  // ??? Правильно ли использовать тут flex?
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mind_map_item.last {
-  background-color: #dc3b5a;
-}
-
-.card_text {
-  font-family: "Messina Sans Mono Book";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
-
-  text-transform: uppercase;
-
-  width: 228px;
-
-  margin-left: auto;
-}
-
-.card_title {
-  font-family: "Right Grotesk Compact Black";
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 64px;
-
-  text-transform: uppercase;
+  @media screen and (min-width: 1440px) {
+    grid-template-rows: 480px 480px;
+  }
 }

@@ -8,12 +8,13 @@ const Faq = () => {
         <div>
           <h2 className={css.title}>FAQ</h2>
 
-          <ul>
+          <ul className={css.faq__list}>
             {faqArray.map((item) => (
               <li className={css.faq__item} key={item.count}>
                 <img
-                  src="/src/images/nft/monkey-1.jpg"
-                  alt=""
+                  srcSet={`${item.img1} 1x, ${item.img2} 2x`}
+                  src={item.img1}
+                  alt="faq image"
                   className={css.faq__image}
                 />
                 <p className={css.faq__count}>[ {item.count} ]</p>

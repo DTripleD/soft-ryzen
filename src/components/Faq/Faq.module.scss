@@ -1,15 +1,30 @@
 @import "../../index.scss";
 
+.faq__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    gap: 36px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 48px;
+  }
+}
+
 .faq__item {
   display: flex;
+
+  cursor: pointer;
 
   position: relative;
 
   // ???  Так?
   justify-content: flex-end;
-
-  border-radius: 24px;
-  padding: 24px;
+  margin-bottom: 10px;
 
   &:hover .faq__text {
     display: block;
@@ -25,48 +40,93 @@
 
   &:hover {
     background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 8px;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 16px;
+      padding: 18px 16px 23px 16px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      border-radius: 24px;
+      padding: 24px;
+    }
   }
 
   &:hover .faq__image {
-    display: block;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }
 
 .faq__image {
-  transform: rotate(-8deg);
   transform-origin: top left;
-
   position: absolute;
   top: 0;
   left: 0;
 
   display: none;
 
-  width: 248px;
-  height: 282px;
-  border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    transform: rotate(-16deg);
+    width: 148px;
+    height: 183px;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    transform: rotate(-8deg);
+    width: 248px;
+    height: 282px;
+    border-radius: 24px;
+  }
 }
 
 .faq__count {
   color: #dc3b5a;
 
-  margin-top: 12px;
-
   font-family: "Biro Script Plus Bold US";
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 40px;
-  text-align: left;
+  line-height: 20px;
+
+  // ??? Можно ли так?
+  margin-top: 4px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 27px;
+
+    margin-top: 6px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 12px;
+  }
 }
 
 .faq__info__wrapper {
   display: flex;
   flex-direction: column;
-
-  width: 635px;
+  gap: 10px;
 
   // ??? Какой тут маржин?
   margin-left: 25px;
+
+  @media screen and (min-width: 768px) {
+    width: 339px;
+
+    gap: 12px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 635px;
+    gap: 36px;
+  }
 }
 
 .faq__title {
@@ -74,9 +134,20 @@
   text-transform: uppercase;
 
   font-family: "Right Grotesk Compact Black";
-  font-size: 64px;
+
+  font-size: 20px;
   font-weight: 900;
-  line-height: 64px;
+  line-height: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
 
 .faq__text {
@@ -85,11 +156,15 @@
   text-transform: uppercase;
 
   font-family: "Messina Sans Mono Book";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
 
   display: none;
 
-  margin-top: 36px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
