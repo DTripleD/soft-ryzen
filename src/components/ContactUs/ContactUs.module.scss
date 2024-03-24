@@ -1,7 +1,6 @@
 @import "../../index.scss";
 
 .form__wrapper {
-  // ??? Или в общий контейнер?
   display: flex;
   flex-direction: column;
 
@@ -65,6 +64,7 @@
 
 .label__wrapper {
   display: flex;
+  position: relative;
 }
 
 .form__icon_wrapper {
@@ -135,7 +135,6 @@
   &::placeholder {
     color: #ffffff3d;
 
-    // ??? Какой тут шрифт?
     font-family: "Messina Sans Mono Book";
     font-size: 12px;
     font-weight: 400;
@@ -164,7 +163,7 @@
 
   border-radius: 8px;
   cursor: pointer;
-  transition: color ease-in-out 300ms;
+  transition: color ease-in-out 350ms;
 
   &:hover {
     color: #1e1e1e;
@@ -188,4 +187,22 @@
     font-weight: 900;
     line-height: 34px;
   }
+}
+
+.error__message {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+
+  font-family: "Messina Sans Mono Book";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #dc3b5a;
+}
+
+.wallet__error {
+  border-color: #dc3b5a;
 }

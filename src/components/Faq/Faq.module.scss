@@ -22,7 +22,6 @@
 
   position: relative;
 
-  // ???  Так?
   justify-content: flex-end;
   margin-bottom: 10px;
 
@@ -92,7 +91,6 @@
   font-weight: 400;
   line-height: 20px;
 
-  // ??? Можно ли так?
   margin-top: 4px;
 
   @media screen and (min-width: 768px) {
@@ -114,7 +112,6 @@
   flex-direction: column;
   gap: 10px;
 
-  // ??? Какой тут маржин?
   margin-left: 25px;
 
   @media screen and (min-width: 768px) {

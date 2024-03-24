@@ -15,8 +15,9 @@
 
 .opened__list {
   display: flex;
+  background-color: #1e1e1e1a;
+  border-radius: 12px;
   width: auto;
-  transition: all ease-in-out 500ms;
   margin-bottom: 8px;
   @media screen and (min-width: 1440px) {
     margin-bottom: 16px;
@@ -31,20 +32,49 @@
   background-color: #1e1e1e1a;
   border-radius: 12px;
 
-  //  ??? Нужно оно тут или нет? Высота меняеться
   display: flex;
   align-items: center;
   justify-content: center;
+
+  text-transform: uppercase;
 
   padding: 0;
 
   width: 48px;
   height: 48px;
 
+  @media screen and (min-width: 1440px) {
+    width: 80px;
+    height: 80px;
+  }
+
+  border: none;
+  cursor: pointer;
+}
+
+.navigation__buttons {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  width: 48px;
+  height: 48px;
   font-family: "Messina Sans Mono SemiBold";
   font-size: 12px;
   font-weight: 600;
   line-height: 14px;
+
+  transition: color ease-in-out 300ms;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    &.scrolled {
+      color: red;
+    }
+  }
 
   @media screen and (min-width: 1440px) {
     width: 80px;
@@ -112,12 +142,19 @@
   background-color: #181818;
 
   position: absolute;
-  top: 0;
+  top: -70px;
   left: 0;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: translateX(100%);
+
+  transition: transform ease-in-out 300ms;
+}
+
+.isOpen {
+  transform: translateX(0);
 }
 
 .burger__button {
@@ -128,6 +165,13 @@
   color: #ffffff;
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .burder__list {

@@ -4,14 +4,9 @@ import icons from "/src/images/icons.svg";
 
 import css from "./Header.module.scss";
 
-import Button from "./Button";
+import Menu from "./Menu";
 import Logo from "../Logo/Logo";
-
-const headerArray = [
-  { name: "#discord", link: "https://discord.com/" },
-  { name: "#boat", link: "https://twitter.com/?lang=uk]" },
-  { name: "#twitter", link: "https://twitter.com/?lang=uk]" },
-];
+import { headerArray } from "../../data/data";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +32,7 @@ const Header = () => {
         <Logo scrolled={scrolled} />
 
         <div>
-          <Button scrolled={scrolled} />
+          <Menu scrolled={scrolled} />
           <ul className={css.social__network_list}>
             {headerArray.map((item) => (
               <li className={css.social__network_item} key={item.name}>

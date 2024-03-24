@@ -20,7 +20,7 @@ const MindMap = () => {
     e.isEnd ? setIsEndBtnActive(true) : setIsEndBtnActive(false);
   }
   return (
-    <section>
+    <section id="M-map">
       <div className={css.container}>
         <h2 className={css.title}>Mind map</h2>
 

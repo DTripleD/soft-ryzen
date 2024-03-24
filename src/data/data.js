@@ -128,3 +128,23 @@ export const mapArray = [
     id: 4,
   },
 ];
+
+export const buttonArray = ["About", "M-map", "Faq", "Arts", "Mint"];
+
+export const headerArray = [
+  { name: "#discord", link: "https://discord.com/" },
+  { name: "#boat", link: "https://twitter.com/?lang=uk]" },
+  { name: "#twitter", link: "https://twitter.com/?lang=uk]" },
+];
+
+export const textSliderArray = [
+  { text: "Destroy stereotypes", id: 1 },
+  { text: "Have no limits", id: 2 },
+  { text: "Break rules", id: 3 },
+  { text: "Destroy stereotypes", id: 4 },
+  { text: "Have no limits", id: 5 },
+  { text: "Break rules", id: 6 },
+  { text: "Destroy stereotypes", id: 7 },
+  { text: "Have no limits", id: 8 },
+  { text: "Break rules", id: 9 },
+];
