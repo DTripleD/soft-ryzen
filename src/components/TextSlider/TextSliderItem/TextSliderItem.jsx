@@ -1,4 +1,4 @@
-import icons from "../../images/icons.svg";
+import icons from "../../../images/icons.svg";
 import css from "./TextSliderItem.module.scss";
 import PropTypes from "prop-types";
 
