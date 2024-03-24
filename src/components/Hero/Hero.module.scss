@@ -1,8 +1,15 @@
 @import "../../index.scss";
 
-.hero__section {
+.hero__container {
   background-color: #dc3b5a;
   border-radius: 24px;
+  padding-top: 36px;
+
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 19px;
+  }
 }
 
 .question__text {
@@ -10,18 +17,27 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  text-align: left;
+  text-align: center;
 
   color: #1e1e1e;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 33px;
+
+    text-align: left;
+
+    &.second {
+      margin-top: 16px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
     font-size: 24px;
     line-height: 40px;
+    &.second {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -51,10 +67,28 @@
 }
 
 .button__wrapper {
-  width: 337px;
   display: flex;
   flex-direction: column;
   gap: 28px;
+
+  z-index: 9999;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 35px;
+    right: 88px;
+    width: 190px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 337px;
+    right: 192px;
+    bottom: 81px;
+  }
 }
 
 .hero__text {
@@ -77,7 +111,9 @@
 .hero__button {
   background-color: #1e1e1e1a;
   border: none;
+
   color: #1e1e1e;
+
   border-radius: 12px;
 
   font-family: "Right Grotesk Compact Black";
@@ -88,9 +124,14 @@
   padding-top: 10px;
   padding-bottom: 12px;
 
-  color: #1e1e1e;
-
   text-align: center;
+  cursor: pointer;
+
+  transition: ease-in-out color 300ms;
+
+  &:hover {
+    color: #ffffff;
+  }
 
   @media screen and (min-width: 1440px) {
     font-size: 28px;
@@ -105,17 +146,25 @@
 
 .hero__text__wrapper {
   // ???
-  position: absolute;
-  width: 1019px;
-}
 
-.hero__container {
-  position: relative;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 591px;
+
+    margin-top: 88px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1019px;
+  }
 }
 
 .hero__image {
   margin-left: auto;
   margin-right: auto;
+
+  z-index: 999;
   position: relative;
-  z-index: 999px;
 }

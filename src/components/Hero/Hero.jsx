@@ -2,7 +2,7 @@ import css from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className={css.hero__section}>
+    <section>
       <div className={`${css.container} ${css.hero__container}`}>
         <div className={css.hero__text__wrapper}>
           <div>
@@ -11,22 +11,10 @@ const Hero = () => {
             <h1 className={css.hero__title}>YACHT APES</h1>
           </div>
 
-          <div>
-            <p className={css.question__text}>Apes aRe eveRywhere</p>
-            <div className={css.button__wrapper}>
-              <p className={css.hero__text}>
-                Yacht Ape is a collection of unique digital apes that you can
-                own in NFT format
-              </p>
-              <button className={css.hero__button}>MEET APES</button>
-            </div>
-          </div>
+          <p className={`${css.question__text} ${css.second}`}>
+            Apes aRe eveRywhere
+          </p>
         </div>
-        {/* <img
-          src="/src/images/hero-img.png"
-          alt="Hero image"
-          className={css.hero__image}
-        /> */}
 
         <img
           srcSet="
@@ -45,7 +33,15 @@ const Hero = () => {
           src="/src/images/hero/hero-img_s@1x.png"
           alt="Hero image"
           loading="lazy"
+          className={css.hero__image}
         />
+        <div className={css.button__wrapper}>
+          <button className={css.hero__button}>MEET APES</button>
+          <p className={css.hero__text}>
+            Yacht Ape is a collection of unique digital apes that you can own in
+            NFT format
+          </p>
+        </div>
       </div>
     </section>
   );

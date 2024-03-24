@@ -47,7 +47,12 @@ const Arts = () => {
         {imagesArray.map((item) => (
           <SwiperSlide key={item.id}>
             <div className={css.nft__item}>
-              <img src={item.src} alt="" />
+              <img
+                srcSet={`${item.img1} 1x, ${item.img2} 2x`}
+                src={item.img1}
+                alt="Arts image"
+                className={css.arts__image}
+              />
             </div>
           </SwiperSlide>
         ))}

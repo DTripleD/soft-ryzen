@@ -1,29 +1,25 @@
-import icons from "/src/images/icons.svg";
 import css from "./TextSlider.module.scss";
+import TextSliderItem from "./TextSliderItem/TextSliderItem";
+
+const textSliderArray = [
+  { text: "Destroy stereotypes", id: 1 },
+  { text: "Have no limits", id: 2 },
+  { text: "Break rules", id: 3 },
+  { text: "Destroy stereotypes", id: 4 },
+  { text: "Have no limits", id: 5 },
+  { text: "Break rules", id: 6 },
+  { text: "Destroy stereotypes", id: 7 },
+  { text: "Have no limits", id: 8 },
+  { text: "Break rules", id: 9 },
+];
 
 const TextSlider = () => {
   return (
     <div className={css.animated__slider}>
       <ul className={css.ticker}>
-        <li className={css.ticker__item}>
-          {/* Окремий компонент */}
-          <p className={css.animated__text}>Destroy stereotypes</p>
-          <svg className={css.sharp__icon}>
-            <use href={icons + "#sharp"}></use>
-          </svg>
-        </li>
-        <li className={css.ticker__item}>
-          <p className={css.animated__text}>Have no limits</p>
-          <svg className={css.sharp__icon}>
-            <use href={icons + "#sharp"}></use>
-          </svg>
-        </li>
-        <li className={css.ticker__item}>
-          <p className={css.animated__text}>Break rules</p>
-          <svg className={css.sharp__icon}>
-            <use href={icons + "#sharp"}></use>
-          </svg>
-        </li>
+        {textSliderArray.map((item) => (
+          <TextSliderItem item={item.text} key={item.id} />
+        ))}
       </ul>
     </div>
   );

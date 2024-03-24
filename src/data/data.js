@@ -1,11 +1,74 @@
 export const imagesArray = [
-  { id: 1, src: "src/images/nft/monkey-1.jpg" },
-  { id: 2, src: "src/images/nft/monkey-2.jpg" },
-  { id: 3, src: "src/images/nft/monkey-3.jpg" },
-  { id: 4, src: "src/images/nft/monkey-4.jpg" },
-  { id: 5, src: "src/images/nft/monkey-5.jpg" },
-  { id: 6, src: "src/images/nft/monkey-6.jpg" },
-  { id: 7, src: "src/images/nft/monkey-7.jpg" },
+  {
+    id: 1,
+    img1: "src/images/arts/arts_img_1@1x.jpg",
+    img2: "src/images/arts/arts_img_1@2x.jpg",
+  },
+  {
+    id: 2,
+    img1: "src/images/arts/arts_img_2@1x.jpg",
+    img2: "src/images/arts/arts_img_2@2x.jpg",
+  },
+  {
+    id: 3,
+    img1: "src/images/arts/arts_img_3@1x.jpg",
+    img2: "src/images/arts/arts_img_3@2x.jpg",
+  },
+  {
+    id: 4,
+    img1: "src/images/arts/arts_img_4@1x.jpg",
+    img2: "src/images/arts/arts_img_4@2x.jpg",
+  },
+  {
+    id: 5,
+    img1: "src/images/arts/arts_img_5@1x.jpg",
+    img2: "src/images/arts/arts_img_5@2x.jpg",
+  },
+  {
+    id: 6,
+    img1: "src/images/arts/arts_img_6@1x.jpg",
+    img2: "src/images/arts/arts_img_6@2x.jpg",
+  },
+  {
+    id: 7,
+    img1: "src/images/arts/arts_img_7@1x.jpg",
+    img2: "src/images/arts/arts_img_7@2x.jpg",
+  },
+  {
+    id: 8,
+    img1: "src/images/arts/arts_img_8@1x.jpg",
+    img2: "src/images/arts/arts_img_8@2x.jpg",
+  },
+  {
+    id: 9,
+    img1: "src/images/arts/arts_img_9@1x.jpg",
+    img2: "src/images/arts/arts_img_9@2x.jpg",
+  },
+  {
+    id: 10,
+    img1: "src/images/arts/arts_img_10@1x.jpg",
+    img2: "src/images/arts/arts_img_10@2x.jpg",
+  },
+  {
+    id: 11,
+    img1: "src/images/arts/arts_img_11@1x.jpg",
+    img2: "src/images/arts/arts_img_11@2x.jpg",
+  },
+  {
+    id: 12,
+    img1: "src/images/arts/arts_img_12@1x.jpg",
+    img2: "src/images/arts/arts_img_12@2x.jpg",
+  },
+  {
+    id: 13,
+    img1: "src/images/arts/arts_img_13@1x.jpg",
+    img2: "src/images/arts/arts_img_13@2x.jpg",
+  },
+  {
+    id: 14,
+    img1: "src/images/arts/arts_img_14@1x.jpg",
+    img2: "src/images/arts/arts_img_14@2x.jpg",
+  },
 ];
 
 export const faqArray = [

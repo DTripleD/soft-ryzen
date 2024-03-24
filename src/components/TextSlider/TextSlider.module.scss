@@ -3,6 +3,8 @@
 .animated__slider {
   background-color: #dc3b5a;
 
+  overflow: hidden;
+
   padding-top: 6px;
   padding-bottom: 9px;
 
@@ -24,33 +26,6 @@
   white-space: nowrap;
 
   animation: ticker 15s linear infinite;
-}
-
-.ticker__item {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-
-  @media screen and (min-width: 1440px) {
-    gap: 36px;
-  }
-}
-
-.animated__text {
-  font-family: "Right Grotesk Compact Black";
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 36px;
-
-  @media screen and (min-width: 1440px) {
-    font-size: 64px;
-
-    line-height: 64px;
-  }
-
-  color: #ffffff;
-
-  text-transform: uppercase;
 }
 
 @keyframes ticker {

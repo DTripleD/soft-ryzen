@@ -45,7 +45,7 @@ const About = () => {
             src="/src/images/about/about-img_s@1x.png"
             alt="Hero image"
             loading="lazy"
-            // className={css.hero__image}
+            className={css.about__image}
           />
         </div>
       </div>
