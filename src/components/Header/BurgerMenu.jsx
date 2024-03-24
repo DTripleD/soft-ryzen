@@ -1,7 +1,7 @@
 import MediaQuery from "react-responsive";
 
 const headerArray = ["#discord", "#boat", "#twitter"];
-import icons from "/src/images/icons.svg";
+import icons from "/soft-ryzen/icons.svg";
 import Footer from "../Footer/Footer";
 import Logo from "../Logo/Logo";
 import { buttonArray } from "../../data/data";

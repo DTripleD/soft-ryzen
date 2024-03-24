@@ -1,5 +1,6 @@
-import icons from "/src/images/icons.svg";
+import icons from "/soft-ryzen/icons.svg";
 import css from "./Logo.module.scss";
+import PropTypes from "prop-types";
 
 const Logo = ({ scrolled }) => {
   return (
@@ -10,3 +11,7 @@ const Logo = ({ scrolled }) => {
 };
 
 export default Logo;
+
+Logo.propTypes = {
+  scrolled: PropTypes.bool,
+};

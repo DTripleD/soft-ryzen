@@ -1,5 +1,5 @@
 import css from "./MindMapItem.module.scss";
-import icons from "/src/images/icons.svg";
+import icons from "/soft-ryzen/icons.svg";
 import PropTypes from "prop-types";
 
 const MindMapItem = ({ item }) => {

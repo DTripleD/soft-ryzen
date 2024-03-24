@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import icons from "/src/images/icons.svg";
+import icons from "/soft-ryzen/icons.svg";
 
 import css from "./Header.module.scss";
 

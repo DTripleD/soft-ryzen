@@ -1,4 +1,4 @@
-import icons from "/src/images/icons.svg";
+import icons from "/soft-ryzen/icons.svg";
 import css from "./TextSliderItem.module.scss";
 import PropTypes from "prop-types";
 

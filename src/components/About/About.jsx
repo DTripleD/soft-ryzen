@@ -1,4 +1,4 @@
-import icons from "/src/images/icons.svg";
+import icons from "/soft-ryzen/icons.svg";
 
 import css from "./About.module.scss";
 import TextSlider from "../TextSlider/TextSlider";
@@ -30,19 +30,19 @@ const About = () => {
 
           <img
             srcSet="
-          /src/images/about/about-img_s@1x.png 216w, 
-          /src/images/about/about-img_s@2x.png 432w, 
-          /src/images/about/about-img_m@1x.png 313w, 
-          /src/images/about/about-img_m@2x.png 626w, 
-          /src/images/about/about-img_l@1x.png 492w, 
-          /src/images/about/about-img_l@2x.png 984w"
+          /soft-ryzen/about/about-img_s@1x.png 216w, 
+          /soft-ryzen/about/about-img_s@2x.png 432w, 
+          /soft-ryzen/about/about-img_m@1x.png 313w, 
+          /soft-ryzen/about/about-img_m@2x.png 626w, 
+          /soft-ryzen/about/about-img_l@1x.png 492w, 
+          /soft-ryzen/about/about-img_l@2x.png 984w"
             sizes="
                       (min-width: 1440px) 492px, 
                       (min-width: 768px) 313px, 
                       (min-width: 360px) 216px, 
                       100vw
                     "
-            src="/src/images/about/about-img_s@1x.png"
+            src="/soft-ryzen/about/about-img_s@1x.png"
             alt="Hero image"
             loading="lazy"
             className={css.about__image}
