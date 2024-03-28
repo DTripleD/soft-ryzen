@@ -36,7 +36,15 @@ const Hero = () => {
           className={css.hero__image}
         />
         <div className={css.button__wrapper}>
-          <button className={css.hero__button}>MEET APES</button>
+          <button
+            className={css.hero__button}
+            onClick={() => {
+              const element = document.getElementById("mint");
+              element?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            MEET APES
+          </button>
           <p className={css.hero__text}>
             Yacht Ape is a collection of unique digital apes that you can own in
             NFT format
