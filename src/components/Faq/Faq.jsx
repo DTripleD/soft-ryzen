@@ -3,7 +3,7 @@ import css from "./Faq.module.scss";
 
 const Faq = () => {
   return (
-    <section id="Faq">
+    <section id="faq">
       <div className={css.container}>
         <div>
           <h2 className={css.title}>FAQ</h2>

@@ -129,7 +129,13 @@ export const mapArray = [
   },
 ];
 
-export const buttonArray = ["About", "M-map", "Faq", "Arts", "Mint"];
+export const buttonArray = [
+  { label: "About", id: "about" },
+  { label: "M-map", id: "m-map" },
+  { label: "Faq", id: "faq" },
+  { label: "Arts", id: "arts" },
+  { label: "Mint", id: "mint" },
+];
 
 export const headerArray = [
   { name: "#discord", link: "https://discord.com/" },

@@ -21,7 +21,7 @@ const Arts = () => {
     e.isEnd ? setIsEndBtnActive(true) : setIsEndBtnActive(false);
   }
   return (
-    <div className={css.container} id="Arts">
+    <div className={css.container} id="arts">
       <h2 className={css.title}>Collection</h2>
       <Swiper
         spaceBetween={24}

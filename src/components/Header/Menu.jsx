@@ -16,15 +16,18 @@ const Menu = ({ scrolled }) => {
         <MediaQuery minWidth={768}>
           {isOpen &&
             buttonArray.map((item) => (
-              <li key={item} onClick={() => setIsOpen(false)}>
-                <a
-                  href={`#${item}`}
+              <li key={item.id} onClick={() => setIsOpen(false)}>
+                <button
+                  onClick={() => {
+                    const element = document.getElementById(item.id);
+                    element?.scrollIntoView({ behavior: "smooth" });
+                  }}
                   className={`${css.navigation__buttons} ${
                     scrolled ? css.scrolled : ""
                   }`}
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </button>
               </li>
             ))}
         </MediaQuery>

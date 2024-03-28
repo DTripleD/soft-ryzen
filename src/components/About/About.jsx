@@ -5,7 +5,7 @@ import TextSlider from "../TextSlider/TextSlider";
 
 const About = () => {
   return (
-    <section id="About">
+    <section id="about">
       <div className={css.container}>
         <div className={css.about__wrapper}>
           <h2 className={css.about__title}>

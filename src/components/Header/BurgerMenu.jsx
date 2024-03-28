@@ -12,45 +12,45 @@ import css from "./Header.module.scss";
 const BurgerMenu = ({ isOpen, setIsOpen }) => {
   return (
     <MediaQuery maxWidth={767}>
-      <div className={`${css.burder__menu} ${isOpen ? css.isOpen : ""}`}>
-        <div>
-          <div className={css.header__container}>
-            <Logo scrolled={true} />
+      <div className={`${css.burger__menu} ${isOpen ? css.isOpen : ""}`}>
+        <div className={css.header__container}>
+          <Logo scrolled={true} />
 
-            <ul className={css.burder__list}>
-              {buttonArray.map((item) => (
-                <li key={item} onClick={() => setIsOpen(false)}>
-                  <a
-                    href={`#${item}`}
-                    className={`${css.burger__button} ${css.scrolled}`}
-                  >
-                    {item}
-                  </a>
+          <div>
+            <button
+              onClick={() => setIsOpen((prev) => !prev)}
+              className={`${css.social__network_button} ${css.scrolled} ${css.menu}`}
+            >
+              {isOpen ? "Close" : "Menu"}
+            </button>
+            <ul className={css.social__network_list}>
+              {headerArray.map((item) => (
+                <li className={css.social__network_item} key={item}>
+                  <button className={css.social__network_button}>
+                    <svg className={`${css.menu__icon} ${css.scrolled}`}>
+                      <use href={icons + item}></use>
+                    </svg>
+                  </button>
                 </li>
               ))}
             </ul>
-
-            <div>
-              <button
-                onClick={() => setIsOpen((prev) => !prev)}
-                className={`${css.social__network_button} ${css.scrolled} ${css.menu}`}
-              >
-                {isOpen ? "Close" : "Menu"}
-              </button>
-              <ul className={css.social__network_list}>
-                {headerArray.map((item) => (
-                  <li className={css.social__network_item} key={item}>
-                    <button className={css.social__network_button}>
-                      <svg className={`${css.menu__icon} ${css.scrolled}`}>
-                        <use href={icons + item}></use>
-                      </svg>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
+        <ul className={css.burger__list}>
+          {buttonArray.map((item) => (
+            <li key={item.id} onClick={() => setIsOpen(false)}>
+              <button
+                onClick={() => {
+                  const element = document.getElementById(item.id);
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className={`${css.burger__button} ${css.scrolled}`}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
+        </ul>
 
         <Footer />
       </div>
